@@ -1,0 +1,126 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0288d1;
+  color: white;
+}
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+header .navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+header .cta {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hero {
+  background: linear-gradient(to right, #0288d1, #03a9f4);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.hero .search-bar input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.hero .search-bar button {
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero .category-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: white;
+  color: #0288d1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.registration {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.registration .register-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.workforce-stats {
+  padding: 30px 20px;
+  text-align: center;
+}
+.featured-jobs {
+  padding: 30px 20px;
+}
+.featured-jobs .job-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.featured-jobs .job-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+}
+.featured-jobs .job-card button {
+  padding: 10px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+footer a {
+  color: #03a9f4;
+  margin: 0 5px;
+  text-decoration: none;
+}
