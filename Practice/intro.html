@@ -1,47 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction</title>
-    <style>
-      button {
-        background-color: red;
-        color: white;
-        width: 120px;
-        height: 36px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      .join-but {
-        background-color: white;
-        color: rgb(0, 0, 200);
-        border: 1px solid rgb(0, 0, 200);
-        width: 12%;
-        height: 36px;
-        border-radius: 2px;
-      }
-      .tweet-but {
-        background-color: rgb(0, 149, 255);
-        border: none;
-        border-radius: 20px;
-        font-size: 24px;
-        font-size: bold;
-        height: 38px;
-        margin-left: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>I am heading one</h1>
-    <h1>I am heading one</h1>
-    <p class="test">I am a paragraph</p>
-
-    <button>SUBSCRIBE</button>
-    <button class="join-but">JOIN</button>
-    <button class="tweet-but">Tweeet</button>
-    <a href="https://youtube.com" target="_blank">You tube</a>
-  </body>
-</html>
+{%static "assets/images/explore" as explore %} {% for exp in explores%}
+<div class="col-md-4 col-sm-6">
+  <div class="single-explore-item">
+    <div class="single-explore-img">
+      <img src="{{explore}}/{{ex1.img}}" alt="explore image" />
+      <div class="single-explore-img-info">
+        <button onclick="window.location.href='#'">best rated</button>
+        <div class="single-explore-image-icon-box">
+          <ul>
+            <li>
+              <div class="single-explore-image-icon">
+                <i class="fa fa-arrows-alt"></i>
+              </div>
+            </li>
+            <li>
+              <div class="single-explore-image-icon">
+                <i class="fa fa-bookmark-o"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="single-explore-txt bg-theme-1">
+      <h2><a href="#">{{exp.title}}</a></h2>
+      <p class="explore-rating-price">
+        <span class="explore-rating">5.0</span>
+        <a href="#"> {{exp.rating}}</a>
+        <span class="explore-price-box">
+          form
+          <span class="explore-price">{{exp.range}}</span>
+        </span>
+        <a href="#">{{exp.ex_type}}</a>
+      </p>
+      <div class="explore-person">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="explore-person-img">
+              <a href="#">
+                <img
+                  src="{% static 'assets/images/explore/person.png' %}"
+                  alt="explore person"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <p>{{exp.description}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="explore-open-close-part">
+        <div class="row">
+          <div class="col-sm-5">
+            <button class="close-btn" onclick="window.location.href='#'">
+              close now
+            </button>
+          </div>
+          <div class="col-sm-7">
+            <div class="explore-map-icon">
+              <a href="#"><i data-feather="map-pin"></i></a>
+              <a href="#"><i data-feather="upload"></i></a>
+              <a href="#"><i data-feather="heart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor%}
