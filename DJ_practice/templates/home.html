@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Website</title>
+  </head>
+  <body>
+    {% block content %}
+    <h1>This is the html home page from templates</h1>
+    <h1>Welcom onboard {{name}}</h1>
+    <br />
+    <br />
+    <form action="add" autocomplete="off" method="post">
+      {% csrf_token %}
+      <h1>Addition of two numbers:</h1>
+      <p>Enter your 1st number : <input type="text" name="num1" /></p>
+      <p>Enter your 2nd number : <input type="text" name="num2" /></p>
+      <input type="submit" />
+    </form>
+    {% endblock%}
+  </body>
+</html>
