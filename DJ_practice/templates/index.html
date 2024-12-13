@@ -376,9 +376,10 @@
               <div class="single-explore-item">
                 <div class="single-explore-img">
                   <img src="{{explore}}/{{exp.img}}" alt="explore image" />
+                  {% if exp.offer %}
                   <div class="single-explore-img-info">
                     <button onclick="window.location.href='#'">
-                      best rated
+                      {{exp.review}}
                     </button>
                     <div class="single-explore-image-icon-box">
                       <ul>
@@ -395,6 +396,7 @@
                       </ul>
                     </div>
                   </div>
+                  {% endif%}
                 </div>
                 <div class="single-explore-txt bg-theme-1">
                   <h2><a href="#">{{exp.title}}</a></h2>

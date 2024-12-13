@@ -7,3 +7,5 @@ class Explore:
     rating: str
     ex_type: str
     description: str
+    review : str
+    offer : bool
