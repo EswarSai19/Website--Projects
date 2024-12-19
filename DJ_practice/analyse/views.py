@@ -4,6 +4,12 @@ from .models import Explore
 # Create your views here.
 
 def index(req):
+
+    explores = Explore.objects.all()
+    return render(req, 'index.html', {"explores":explores})
+
+
+    
     # ex1 = Explore()
     # ex1.title = "Hyderabad"
     # ex1.rating = "20 ratings"
@@ -60,5 +66,4 @@ def index(req):
 
     # explores = [ex1, ex2, ex3]
 
-    explores = Explore.objects.all()
-    return render(req, 'index.html', {"explores":explores})
+    
