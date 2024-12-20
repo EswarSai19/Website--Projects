@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelancer Page</title>
+  </head>
+  <body>
+    {% for freelancer in object_list %}
+    <ul>
+      <li>{{ freelancer.name}}</li>
+    </ul>
+    {% endfor %}
+  </body>
+</html>

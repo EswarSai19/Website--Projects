@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="GigzeraJobsPage.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Gigzera Job Listings</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gigzera</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search jobs by skills or category..." />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Industries</a>
+        <button class="login-button">Login</button>
+        <button class="signup-button">Sign Up</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Left section -->
+      <aside class="left-section">
+        <!-- Filter Jobs Section -->
+        <div class="filter-box">
+          <i class="fa-solid fa-filter filter-icon"></i>
+          <input
+            type="text"
+            placeholder="Filter jobs..."
+            class="filter-input"
+          />
+        </div>
+
+        <!-- Social Media Updates Section -->
+        <div class="social-media-box">
+          <h3>Social Media Updates</h3>
+          <div class="social-update">
+            <i class="fa-brands fa-twitter icon"></i>
+            <p>Latest job opportunities in #WebDevelopment...</p>
+          </div>
+          <div class="social-update">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <p>Join our tech community on LinkedIn...</p>
+          </div>
+          <div class="social-update">
+            <i class="fa-brands fa-facebook icon"></i>
+            <p>Join our tech community on Facebook...</p>
+          </div>
+          <div class="social-update">
+            <i class="fa-brands fa-instagram icon"></i>
+            <p>Join our tech community on Instagram...</p>
+          </div>
+        </div>
+      </aside>
+      <!-- featured jobs  -->
+      <section class="featured-jobs">
+        <div class="container">
+          <div class="job-cards">
+            <!-- Job Card 1 -->
+            <div class="job-card">
+              <div class="job-title">
+                Senior Frontend Developer
+                <span class="job-id">(Opp ID: 123456)</span>
+              </div>
+              <div class="job-duration-salary">
+                <span class="duration">⏳ 1 to 2 Months</span>
+                <span class="salary">💳 $80k - $120k</span>
+              </div>
+              <p class="job-description">
+                We’re looking for an experienced Frontend Developer to join our
+                team...
+              </p>
+              <div class="job-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+              </div>
+              <div class="job-actions">
+                <a href="#" class="view-more">View More</a>
+                <a href="#" class="provide-quote">Provide Quote</a>
+              </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+              <div class="job-title">
+                UX/UI Designer
+                <span class="job-id">(Opp ID: 265789)</span>
+              </div>
+              <div class="job-duration-salary">
+                <span class="duration">⏳ 2 to 3 Months</span>
+                <span class="salary">💳 $70k - $90k</span>
+              </div>
+              <p class="job-description">
+                Seeking a creative UX/UI Designer to craft exceptional user
+                experiences...
+              </p>
+              <div class="job-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Adobe XD</span>
+                <span class="tag">Prototyping</span>
+              </div>
+              <div class="job-actions">
+                <a href="#" class="view-more">View More</a>
+                <a href="#" class="provide-quote">Provide Quote</a>
+              </div>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card">
+              <div class="job-title">
+                Backend Developer
+                <span class="job-id">(Opp ID: 564789)</span>
+              </div>
+              <div class="job-duration-salary">
+                <span class="duration">⏳ 4 to 5 Months</span>
+                <span class="salary">💳 $90k - $130k</span>
+              </div>
+              <p class="job-description">
+                Looking for a skilled Backend Developer with strong system
+                design experience...
+              </p>
+              <div class="job-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Python</span>
+                <span class="tag">AWS</span>
+              </div>
+              <div class="job-actions">
+                <a href="#" class="view-more">View More</a>
+                <a href="#" class="provide-quote">Provide Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Section -->
+      <aside class="right-section">
+        <!-- First Ad Box: Two Videos -->
+        <div class="ad-box">
+          <div class="ad-slideshow">
+            <!-- Video 1 -->
+            <div class="ad-video-container active">
+              <video id="video1" width="100%" height="100%" autoplay muted>
+                <source
+                  src="https://cdn.yellowmessenger.com/mV64DYgpzy811734694758683.mp4"
+                  type="video/mp4"
+                />
+                <!-- Ensure the video URL is correct -->
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="ad-video-container">
+              <video id="video2" width="100%" height="100%" muted>
+                <source
+                  src="https://cdn.yellowmessenger.com/QnhdnAlDdVA01734691830688.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Ad Box with Image Slideshow -->
+        <a href="https://www.intellectdivi.com/" target="_blank">
+          <div class="ad-box">
+            <div class="ad-slideshow">
+              <div class="ad-image-container">
+                <img
+                  src="https://cdn.yellowmessenger.com/OGJDayjMR4n81734681557269.jpeg"
+                  alt="Recruitment Advertisement"
+                />
+              </div>
+              <div class="ad-image-container">
+                <img
+                  src="https://cdn.yellowmessenger.com/eRzOfCc5uSsT1734681543395.jpg"
+                  alt="Recruitment Advertisement"
+                />
+              </div>
+              <div class="ad-image-container">
+                <img
+                  src="https://cdn.yellowmessenger.com/kfrb0QFTEeqN1734681632235.png"
+                  alt="Recruitment Advertisement"
+                />
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Third Ad Box with Image Slideshow -->
+        <div class="ad-box">
+          <div class="ad-slideshow">
+            <div class="ad-image-container active">
+              <img
+                src="https://cdn.yellowmessenger.com/ocAAFbuz3O7V1734681661220.jpeg"
+                alt="Job Training Advertisement"
+              />
+            </div>
+            <div class="ad-image-container">
+              <img
+                src="https://cdn.yellowmessenger.com/92ZENQocsyCi1734681673376.jpg"
+                alt="Job Training Advertisement"
+              />
+            </div>
+            <div class="ad-image-container">
+              <img
+                src="https://cdn.yellowmessenger.com/wtJ0zcKfJzFW1734681690293.jpeg"
+                alt="Job Training Advertisement"
+              />
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <script>
+        // JavaScript for video slideshow
+        let currentVideoIndex = 0;
+        const videoContainers = document.querySelectorAll(
+          ".ad-video-container"
+        );
+        const videos = document.querySelectorAll("video");
+
+        // Function to show the next video after the current one ends
+        function showNextVideo() {
+          // Hide current video
+          videoContainers[currentVideoIndex].classList.remove("active");
+
+          // Move to the next video
+          currentVideoIndex = (currentVideoIndex + 1) % videoContainers.length;
+          console.log(currentVideoIndex);
+
+          // Show the next video
+          videoContainers[currentVideoIndex].classList.add("active");
+
+          // Ensure that the video starts playing when switched
+          videos[currentVideoIndex].play().catch((error) => {
+            if (error.name === "AbortError") {
+              console.log("Video playback was interrupted to save power.");
+              // Handle the error, e.g., retry playing the video
+              videos[currentVideoIndex].play();
+            } else {
+              console.error("Video playback error:", error);
+            }
+          });
+        }
+
+        // Attach the 'ended' event listener to each video
+        videos.forEach((video, index) => {
+          video.addEventListener("ended", () => {
+            // Show next video when the current video ends
+            console.log("I am in");
+            showNextVideo();
+          });
+        });
+
+        // Ensure the videos are loaded and ready to play
+        window.addEventListener("load", () => {
+          // Preload videos
+          videos.forEach((video) => {
+            video.load();
+          });
+
+          // Start the first video
+          if (videos.length > 0) {
+            videoContainers[currentVideoIndex].classList.add("active");
+            videos[currentVideoIndex].play().catch((error) => {
+              if (error.name === "AbortError") {
+                console.log("Video playback was interrupted to save power.");
+                // Handle the error, e.g., retry playing the video
+                videos[currentVideoIndex].play();
+              } else {
+                console.error("Video playback error:", error);
+              }
+            });
+          }
+        });
+
+        // Start the slideshow when the page is loaded
+        window.onload = function () {
+          // Start the first video
+          videos[0].play();
+
+          // Start the image slideshow
+          startImageSlideshow();
+        };
+
+        // Function to start the image slideshow for ad-boxes
+        function startImageSlideshow() {
+          const adBoxes = document.querySelectorAll(".ad-box .ad-slideshow");
+
+          adBoxes.forEach((adBox) => {
+            // Skip the video box (first box)
+            if (adBox.querySelector(".ad-video-container")) return;
+
+            const images = adBox.querySelectorAll(".ad-image-container");
+            let activeIndex = 0;
+
+            // Set the first image to active initially
+            images[activeIndex].classList.add("active");
+
+            // Change the active image every 3 seconds (3000 milliseconds)
+            setInterval(() => {
+              images[activeIndex].classList.remove("active"); // Hide the current image
+              activeIndex = (activeIndex + 1) % images.length; // Move to the next image (circular)
+              images[activeIndex].classList.add("active"); // Show the next image
+            }, 3000); // 3 seconds interval
+          });
+        }
+      </script>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4>Gigzera</h4>
+          <p>Connecting Talent with Opportunity</p>
+          <p>Email: contact@gigzera.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </div>
+        <div class="social-media">
+          <h4>Follow Us</h4>
+          <p>Twitter | LinkedIn | Facebook</p>
+        </div>
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
